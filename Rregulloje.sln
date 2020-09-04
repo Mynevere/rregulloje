@@ -7,13 +7,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F566A471-8BE4-40CB-8744-32971FB661B8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E82B4E8D-97F8-4762-A1E2-9B0DA493EFF7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure.IoC", "Infrastructure.IoC", "{E82B4E8D-97F8-4762-A1E2-9B0DA493EFF7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{40D31083-D8A9-43A4-9B3D-73E2DAD3EDA9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{40D31083-D8A9-43A4-9B3D-73E2DAD3EDA9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rregulloje.API", "Rregulloje.UI\Rregulloje.API.csproj", "{D280DFDF-5EF8-4079-8C3E-CCE6CE80E15B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure.Data", "Infrastructure.Data", "{3B340E3F-251B-4965-8560-D22D17DBC7A1}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D280DFDF-5EF8-4079-8C3E-CCE6CE80E15B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D280DFDF-5EF8-4079-8C3E-CCE6CE80E15B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D280DFDF-5EF8-4079-8C3E-CCE6CE80E15B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D280DFDF-5EF8-4079-8C3E-CCE6CE80E15B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D280DFDF-5EF8-4079-8C3E-CCE6CE80E15B} = {40D31083-D8A9-43A4-9B3D-73E2DAD3EDA9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1ED094EA-AA6B-4631-8E5E-C5235655618C}
