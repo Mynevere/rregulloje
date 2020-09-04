@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj",
         "projectName": "Rregulloje.UI",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -62,6 +62,12 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.7, )"
+            },
+            "Microsoft.TypeScript.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.0.2, )"
             }
           },
           "imports": [
