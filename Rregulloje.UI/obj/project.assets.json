@@ -5357,9 +5357,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\Rregulloje.API.csproj",
-      "projectName": "Rregulloje.API",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\Rregulloje.API.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj",
+      "projectName": "Rregulloje.UI",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\obj\\",
       "projectStyle": "PackageReference",

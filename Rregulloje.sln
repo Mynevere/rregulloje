@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure.IoC", "Infra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{40D31083-D8A9-43A4-9B3D-73E2DAD3EDA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rregulloje.API", "Rregulloje.UI\Rregulloje.API.csproj", "{D280DFDF-5EF8-4079-8C3E-CCE6CE80E15B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rregulloje.UI", "Rregulloje.UI\Rregulloje.UI.csproj", "{D280DFDF-5EF8-4079-8C3E-CCE6CE80E15B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure.Data", "Infrastructure.Data", "{3B340E3F-251B-4965-8560-D22D17DBC7A1}"
 EndProject
