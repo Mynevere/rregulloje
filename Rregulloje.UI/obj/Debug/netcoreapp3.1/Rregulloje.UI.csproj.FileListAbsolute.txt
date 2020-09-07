@@ -77,3 +77,17 @@ C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\obj\Debug\netcoreapp3.1\Rre
 C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\obj\Debug\netcoreapp3.1\Rregulloje.UI.csproj.CopyComplete
 C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\obj\Debug\netcoreapp3.1\staticwebassets\Rregulloje.UI.StaticWebAssets.Manifest.cache
 C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\obj\Debug\netcoreapp3.1\staticwebassets\Rregulloje.UI.StaticWebAssets.xml
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\bin\Debug\netcoreapp3.1\RregullojeWebAPI\package-lock.json
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\bin\Debug\netcoreapp3.1\Rregulloje.UI.deps.json
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\bin\Debug\netcoreapp3.1\Rregulloje.UI.runtimeconfig.json
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\bin\Debug\netcoreapp3.1\Rregulloje.UI.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\bin\Debug\netcoreapp3.1\Rregulloje.UI.dll
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\bin\Debug\netcoreapp3.1\Rregulloje.UI.pdb
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\bin\Debug\netcoreapp3.1\Rregulloje.UI.Views.dll
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\bin\Debug\netcoreapp3.1\Rregulloje.UI.Views.pdb
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\obj\Debug\netcoreapp3.1\Rregulloje.UI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\obj\Debug\netcoreapp3.1\Rregulloje.UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\obj\Debug\netcoreapp3.1\Rregulloje.UI.Views.pdb
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\obj\Debug\netcoreapp3.1\Rregulloje.UI.dll
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\obj\Debug\netcoreapp3.1\Rregulloje.UI.pdb
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.UI\obj\Debug\netcoreapp3.1\Rregulloje.UI.genruntimeconfig.cache
