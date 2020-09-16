@@ -8,7 +8,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { ServicesComponent } from './services/services.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,16 @@ import { HomePageComponent } from './home-page/home-page.component';
     HomeComponent,
     FooterComponent,
     ContactUsComponent,
-    HomePageComponent
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CarouselModule.forRoot()
+  ],
+  exports: [
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

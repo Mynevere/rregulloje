@@ -1,6 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
-@media (max-width: 575.98px) {
-  .home-page {
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+@media (max-width: 483.98px) {
+  .homePage {
     //home
     .jumbotron {
       padding: 21rem 42rem;
@@ -67,97 +94,40 @@
       background-color: #ffc107;
       color: #fff;
     }
+
+    .jumbotron .container {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 170px;
+    }
+
   }
 
   /*CONTACT US SCSS*/
   .contact-us {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
     .contactUs {
       padding: 21rem 26rem;
-      position:fixed;
+      position: fixed;
+    }
+  }
+
+  /*Services scss*/
+  .services {
+    .servicesC {
+      padding: 21rem 26rem;
+      position: fixed;
     }
   }
 }
 
-@media (max-width: 767.98px) {
-  .home-page {
-    //home
-    .jumbotron {
-      padding: 21rem 42rem;
-    }
-
-    .container-fluid {
-      padding: 60px 50px;
-    }
-    //Company
-    .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-    }
-
-    .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-    }
-    //price
-    .panel {
-      border: 1px solid #ffc107;
-      border-radius: 0;
-      transition: box-shadow 0.5s;
-    }
-
-    .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-    }
-
-    .panel-footer .btn:hover {
-      border: 1px solid #ffc107;
-      background-color: #fff !important;
-      color: #f4511e;
-    }
-
-    .panel-heading {
-      color: #fff !important;
-      background-color: #ffc107 !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    .panel-footer {
-      background-color: #fff !important;
-    }
-
-    .panel-footer h3 {
-      font-size: 32px;
-    }
-
-    .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-    }
-
-    .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #ffc107;
-      color: #fff;
-    }
-  }
-
-  /*CONTACT US SCSS*/
-  .contact-us {
-    .contactUs {
-      padding: 21rem 26rem;
-    }
-  }
-}
-  /*HOMEPAGE SCSS*/
-  @media (max-width: 991.98px) {
-    .home-page {
+  @media (max-width: 575.98px) {
+    .homePage {
       //home
       .jumbotron {
         padding: 21rem 42rem;
@@ -228,164 +198,390 @@
 
     /*CONTACT US SCSS*/
     .contact-us {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+
       .contactUs {
         padding: 21rem 26rem;
+        position: fixed;
+      }
+    }
+
+    /*Services scss*/
+    .services {
+      .servicesC {
+        padding: 10rem 0rem;
       }
     }
   }
 
-@media (max-width: 1199.98px) {
-  .home-page {
-    //home
-    .jumbotron {
-      padding: 21rem 42rem;
+  @media (max-width: 767.98px) {
+    .homePage {
+      //home
+      .jumbotron {
+        padding: 21rem 42rem;
+      }
+
+      .container-fluid {
+        padding: 60px 50px;
+      }
+      //Company
+      .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+      }
+
+      .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+      }
+      //price
+      .panel {
+        border: 1px solid #ffc107;
+        border-radius: 0;
+        transition: box-shadow 0.5s;
+      }
+
+      .panel:hover {
+        box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+      }
+
+      .panel-footer .btn:hover {
+        border: 1px solid #ffc107;
+        background-color: #fff !important;
+        color: #f4511e;
+      }
+
+      .panel-heading {
+        color: #fff !important;
+        background-color: #ffc107 !important;
+        padding: 25px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      .panel-footer {
+        background-color: #fff !important;
+      }
+
+      .panel-footer h3 {
+        font-size: 32px;
+      }
+
+      .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      .panel-footer .btn {
+        margin: 15px 0;
+        background-color: #ffc107;
+        color: #fff;
+      }
     }
 
-    .container-fluid {
-      padding: 60px 50px;
-    }
-    //Company
-    .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-    }
-
-    .thumbnail img {
+    /*CONTACT US SCSS*/
+    .contact-us {
       width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-    }
-    //price
-    .panel {
-      border: 1px solid #ffc107;
-      border-radius: 0;
-      transition: box-shadow 0.5s;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+
+      .contactUs {
+        padding: 21rem 26rem;
+      }
     }
 
-    .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-    }
-
-    .panel-footer .btn:hover {
-      border: 1px solid #ffc107;
-      background-color: #fff !important;
-      color: #f4511e;
-    }
-
-    .panel-heading {
-      color: #fff !important;
-      background-color: #ffc107 !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    .panel-footer {
-      background-color: #fff !important;
-    }
-
-    .panel-footer h3 {
-      font-size: 32px;
-    }
-
-    .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-    }
-
-    .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #ffc107;
-      color: #fff;
+    /*Services scss*/
+    .services {
+      .servicesC {
+        padding: 21rem 26rem;
+        position: fixed;
+      }
     }
   }
+  /*HOMEPAGE SCSS*/
+  @media (max-width: 991.98px) {
+    .homePage {
+      //home
+      .jumbotron {
+        padding: 21rem 42rem;
+      }
 
-  /*CONTACT US SCSS*/
-  .contact-us {
-    .contactUs {
-      padding: 21rem 26rem;
-    }
-  }
-  }
+      .container-fluid {
+        padding: 60px 50px;
+      }
+      //Company
+      .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+      }
 
-@media (max-width: 2818.98px) {
-  .home-page {
-    //home
-    .jumbotron {
-      padding: 21rem 42rem;
+      .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+      }
+      //price
+      .panel {
+        border: 1px solid #ffc107;
+        border-radius: 0;
+        transition: box-shadow 0.5s;
+      }
+
+      .panel:hover {
+        box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+      }
+
+      .panel-footer .btn:hover {
+        border: 1px solid #ffc107;
+        background-color: #fff !important;
+        color: #f4511e;
+      }
+
+      .panel-heading {
+        color: #fff !important;
+        background-color: #ffc107 !important;
+        padding: 25px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      .panel-footer {
+        background-color: #fff !important;
+      }
+
+      .panel-footer h3 {
+        font-size: 32px;
+      }
+
+      .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      .panel-footer .btn {
+        margin: 15px 0;
+        background-color: #ffc107;
+        color: #fff;
+      }
     }
 
-    .container-fluid {
-      padding: 60px 50px;
-    }
-    //Company
-    .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-    }
-
-    .thumbnail img {
+    /*CONTACT US SCSS*/
+    .contact-us {
       width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-    }
-    //price
-    .panel {
-      border: 1px solid #ffc107;
-      border-radius: 0;
-      transition: box-shadow 0.5s;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+
+      .contactUs {
+        padding: 21rem 26rem;
+      }
     }
 
-    .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-    }
-
-    .panel-footer .btn:hover {
-      border: 1px solid #ffc107;
-      background-color: #fff !important;
-      color: #f4511e;
-    }
-
-    .panel-heading {
-      color: #fff !important;
-      background-color: #ffc107 !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    .panel-footer {
-      background-color: #fff !important;
-    }
-
-    .panel-footer h3 {
-      font-size: 32px;
-    }
-
-    .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-    }
-
-    .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #ffc107;
-      color: #fff;
+    /*Services scss*/
+    .services {
+      .servicesC {
+        padding: 21rem 26rem;
+        position: fixed;
+      }
     }
   }
 
-  /*CONTACT US SCSS*/
-  .contact-us {
-    .contactUs {
-      padding: 21rem 26rem;
+  @media (max-width: 1199.98px) {
+    .homePage {
+      //home
+      .jumbotron {
+        padding: 21rem 42rem;
+      }
+
+      .container-fluid {
+        padding: 60px 50px;
+      }
+      //Company
+      .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+      }
+
+      .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+      }
+      //price
+      .panel {
+        border: 1px solid #ffc107;
+        border-radius: 0;
+        transition: box-shadow 0.5s;
+      }
+
+      .panel:hover {
+        box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+      }
+
+      .panel-footer .btn:hover {
+        border: 1px solid #ffc107;
+        background-color: #fff !important;
+        color: #f4511e;
+      }
+
+      .panel-heading {
+        color: #fff !important;
+        background-color: #ffc107 !important;
+        padding: 25px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      .panel-footer {
+        background-color: #fff !important;
+      }
+
+      .panel-footer h3 {
+        font-size: 32px;
+      }
+
+      .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      .panel-footer .btn {
+        margin: 15px 0;
+        background-color: #ffc107;
+        color: #fff;
+      }
+    }
+
+    /*CONTACT US SCSS*/
+    .contact-us {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+
+      .contactUs {
+        padding: 21rem 26rem;
+      }
+    }
+
+    /*Services scss*/
+    .services {
+      .servicesC {
+        padding: 21rem 26rem;
+        position: fixed;
+      }
     }
   }
-}
+
+  @media (max-width: 2818.98px) {
+    .homePage {
+      //home
+      .jumbotron {
+        padding: 21rem 42rem;
+      }
+
+      .container-fluid {
+        padding: 60px 50px;
+      }
+      //Company
+      .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+      }
+
+      .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+      }
+      //price
+      .panel {
+        border: 1px solid #ffc107;
+        border-radius: 0;
+        transition: box-shadow 0.5s;
+      }
+
+      .panel:hover {
+        box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+      }
+
+      .panel-footer .btn:hover {
+        border: 1px solid #ffc107;
+        background-color: #fff !important;
+        color: #f4511e;
+      }
+
+      .panel-heading {
+        color: #fff !important;
+        background-color: #ffc107 !important;
+        padding: 25px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      .panel-footer {
+        background-color: #fff !important;
+      }
+
+      .panel-footer h3 {
+        font-size: 32px;
+      }
+
+      .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      .panel-footer .btn {
+        margin: 15px 0;
+        background-color: #ffc107;
+        color: #fff;
+      }
+    }
+
+    /*CONTACT US SCSS*/
+    .contact-us {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+
+      .contactUs {
+        padding: 21rem 26rem;
+      }
+    }
+
+    /*Services scss*/
+    .services {
+      .servicesC {
+        padding: 21rem 26rem;
+        position: fixed;
+      }
+    }
+  }
