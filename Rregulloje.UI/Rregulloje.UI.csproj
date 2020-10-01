@@ -67,4 +67,16 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Rregulloje.Application\Rregulloje.Application.csproj" />
+    <ProjectReference Include="..\Rregulloje.Domain\Rregulloje.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Errors\" />
+    <Folder Include="MiddleWare\" />
+  </ItemGroup>
+
 </Project>

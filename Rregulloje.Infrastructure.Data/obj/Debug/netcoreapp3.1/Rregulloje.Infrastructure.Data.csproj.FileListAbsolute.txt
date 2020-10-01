@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Infrastructure.Data\bin\Debug\netcoreapp3.1\Rregulloje.Infrastructure.Data.deps.json
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Infrastructure.Data\bin\Debug\netcoreapp3.1\Rregulloje.Infrastructure.Data.dll
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Infrastructure.Data\bin\Debug\netcoreapp3.1\Rregulloje.Infrastructure.Data.pdb
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Infrastructure.Data\obj\Debug\netcoreapp3.1\Rregulloje.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Infrastructure.Data\obj\Debug\netcoreapp3.1\Rregulloje.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Infrastructure.Data\obj\Debug\netcoreapp3.1\Rregulloje.Infrastructure.Data.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Infrastructure.Data\obj\Debug\netcoreapp3.1\Rregulloje.Infrastructure.Data.dll
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Infrastructure.Data\obj\Debug\netcoreapp3.1\Rregulloje.Infrastructure.Data.pdb
