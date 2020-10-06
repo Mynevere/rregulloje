@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj",
         "projectName": "Rregulloje.Infrastructure.IoC",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.IoC\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

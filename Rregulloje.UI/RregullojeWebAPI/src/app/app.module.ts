@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ServicesComponent } from './services/services.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CompanyComponent } from './company/company.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     FooterComponent,
     ContactUsComponent,
     ServicesComponent,
+    CompanyComponent,
   ],
   imports: [
     BrowserModule,
