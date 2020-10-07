@@ -25,7 +25,7 @@ namespace Rregulloje.Domain.Context
         public virtual DbSet<Issue> Issue { get; set; }
         public virtual DbSet<ServiceType> ServiceType { get; set; }
         public virtual DbSet<MinServices> MinServices { get; set; }
-        public virtual DbSet<Services> Services { get; set; }
+        public virtual DbSet<Service> Services { get; set; }
         public virtual DbSet<ExtraServices> ExtraServices { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -139,7 +139,7 @@ namespace Rregulloje.Domain.Context
                       .IsRequired();
             });
 
-            modelBuilder.Entity<Services>(entity =>
+            modelBuilder.Entity<Service>(entity =>
             {
                 entity.HasKey(e => e.Id)
                       .HasName("PK_Services_Id");
@@ -153,7 +153,7 @@ namespace Rregulloje.Domain.Context
 
             });
 
-            modelBuilder.Entity<Services>()
+            modelBuilder.Entity<Service>()
             .HasOne(p => p.MinService)
             .WithMany()
             .HasForeignKey(p => p.MinServiceId)

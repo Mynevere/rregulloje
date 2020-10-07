@@ -1,10 +1,24 @@
-﻿using System;
+﻿using Rregulloje.Domain.Context;
+using Rregulloje.Infrastructure.Data.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Rregulloje.Infrastructure.Data.Repositories
 {
-    public class ServicesRepository
+    public class ServicesRepository : BaseRepository, IServicesRepository 
     {
+        private readonly ApplicationDbContext _context;
+
+        public ServicesRepository(ApplicationDbContext context) : base(context)
+        {
+            _context = context;
+        }
+
+        public override async Task<ICollection<T>> GetAllAsync<T>() where T : class
+        {
+            return await base.GetAllAsync<T>();
+        }
     }
 }

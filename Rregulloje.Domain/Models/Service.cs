@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Rregulloje.Domain.Models
 {
-    public class Services
+    public class Service
     {
         public int Id { get; set; }
         public string Name { get; set; }

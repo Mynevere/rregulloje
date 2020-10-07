@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Rregulloje.Application.ViewModels;
+using Rregulloje.Domain.Models;
 
 namespace Rregulloje.Application.AutoMapper
 {
@@ -6,6 +8,8 @@ namespace Rregulloje.Application.AutoMapper
     {
         public DomainToViewModelProfile()
         {
+            CreateMap<Service, ServicesViewModel>();
+            CreateMap<ServicesViewModel, Service>();
         }
     }
 }

@@ -12,6 +12,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rregulloje.Domain.Context;
+using Rregulloje.UI.Extenstions;
+using Rregulloje.Infrastructure.IoC;
+using Rregulloje.UI.Configurations;
 
 namespace Rregulloje.UI
 {
@@ -32,8 +35,21 @@ namespace Rregulloje.UI
                     Configuration.GetConnectionString("RregullojeDB")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
-            services.AddRazorPages();
+
+
+            //services.AddControllersWithViews();
+            services.AddSwaggerDocumentation();
+
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200");
+                });
+            });
+
+            DependecyContainer.RegisterServices(services);
+            services.RegisterAutoMapper();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,19 +67,20 @@ namespace Rregulloje.UI
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+            
+            app.UseRouting();
             app.UseStaticFiles();
 
-            app.UseRouting();
+            app.UseCors("CorsPolicy");
 
             app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseSwaggerDocumentation();
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
+                endpoints.MapControllers(); 
             });
         }
     }

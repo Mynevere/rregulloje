@@ -10,8 +10,8 @@
   </slide>
 </carousel>
 <section class="featured">
-  <div class="d-flex justify-content-center pt-4">
-    <h1>{{title}}</h1>
+  <div class="d-flex justify-content-center pt-4 text-uppercase">
+    <h1>{{company.name}}</h1>
   </div>
   <hr />
 </section>
@@ -20,74 +20,72 @@
     <div class="row">
       <div class="col-sm-8 mt-4 pl-5 pb-5">
         <h2>Rreth Kompanisë</h2>
-        <h4>Test</h4>
-        <p>Lorem ipsum..</p>
-        <button class="btn btn-default btn-lg">Lexo më shumë</button>
+        <h4 class="text-uppercase">{{company.name}}</h4>
+        <p>{{company.description}}</p>
+        <button class="btn btn-outline-warning btn-lg" routerLink="../company">Lexo më shumë</button>
       </div>
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-signal logo"></span>
       </div>
     </div>
+    <div class="row mb-2 ml-5 mr-5 mb-5">
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Kosove</strong> 
+            <h3 class="mb-0">Qytetet ku operojme</h3>
+            <!--<div class="mb-1 text-muted">Nov 12</div>-->
+            <h5 class="card-text mb-auto">Sherbimet tona mund ti kryejm ne qytetet:</h5>
+            <ul>
+              <li>Prishtine</li>
+              <li>Fushekosove</li>
+              <li>Lipjan</li>
+            </ul>
+            <!--<a href="#" class="stretched-link">Me shume</a>-->
+          </div>
+          <!--<div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>-->
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Rrjetet Sociale</strong>
+            <h3 class="mb-0">Mund te na gjeni edhe ne:</h3>
+            <!--<div class="mb-1 text-muted">Nov 11</div>-->
+            <!--<p class="mb-auto">Punen tone mund ta shihni poashtu edhe nepermjet rrjeteve sociale:</p>-->
+            <button type="button" mdbBtn color="fb" class="waves-light" mdbWavesEffect><i class="fab fa-facebook-f left"></i>Facebook</button>
+            <button type="button" mdbBtn color="ins" class="waves-light" mdbWavesEffect><i class="fab fa-instagram left"></i>Instagram</button>
+          </div>
+          <!--<div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>-->
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2 ml-5 mr-5 mb-5">
+      <div class="col">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Sherbimet</strong>
+            <h3 class="mb-0">Cka ne ofrojme?</h3>
+            <!--<div class="mb-1 text-muted">Nov 11</div>-->
+            <p class="mb-auto">
+              Duararti është gjithmonë i gatshëm të rregulloj çdo problem që ju mund të keni në shtëpinë apo zyrën tuaj.
+              Stafi ynë ofron shërbime profesionale dhe efikase, me kujdes të veçantë që çdo nevojë e juaj të ketë një zgjidhje të thjeshtë dhe të shpejtë.
+              Shërbimet e Duarartit përfshijnë: riparimet e bojlerit, problemet me lavatriqe, ndërrimin e siguresave dhe prizave, riparimet e dyerve dhe dritareve,
+              ndërrimin e bravave e shume e shume 
+              <a routerLink="../services" class="stretched-link">sherbime tjera.</a>
+            </p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <!--<div class="container-fluid bg-grey">
-    <div class="row">
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-globe logo"></span>
-      </div>
-      <div class="col-sm-8 mt-4 mb-5 pl-5 pb-5">
-        <h2>Shërbimet tona</h2>
-        <h4><strong>MISIONI:</strong> Our mission lorem ipsum..</h4>
-        <p><strong>VIZIONI:</strong> Our vision Lorem ipsum..</p>
-        iv
-      </div>
-    </div>
-  </div>-->
-</div>
 
-<div class="row mb-2 ml-5 mr-5 mb-5">
-  <div class="col-md-6">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-primary">Kosove</strong>
-        <h3 class="mb-0">Qytetet ku operojme</h3>
-        <div class="mb-1 text-muted">Nov 12</div>
-        <p class="card-text mb-auto">Klikoni me shume per te pare vendet ne te cilat i kryejm sherbimet tona</p>
-        <a href="#" class="stretched-link">Me shume</a>
-      </div>
-      <div class="col-auto d-none d-lg-block">
-        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-success">Rrjetet Sociale</strong>
-        <h3 class="mb-0">Ku mund te na gjeni?</h3>
-        <div class="mb-1 text-muted">Nov 11</div>
-        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="stretched-link">Continue reading</a>
-      </div>
-      <div class="col-auto d-none d-lg-block">
-        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row mb-2 ml-5 mr-5 mb-5">
-  <div class="col">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-success">Sherbimet</strong>
-        <h3 class="mb-0">Cka ne ofrojme?</h3>
-        <div class="mb-1 text-muted">Nov 11</div>
-        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="stretched-link">Continue reading</a>
-      </div>
-      <div class="col-auto d-none d-lg-block">
-        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      </div>
-    </div>
-  </div>
-</div>
