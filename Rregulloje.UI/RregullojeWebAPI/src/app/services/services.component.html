@@ -19,7 +19,16 @@
   <div class="row mt-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" *ngFor="let service of companyServices">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <img src="" alt="..." class="img-thumbnail" >
+              <p class="text-monospace">{{service.name}}</p>
+              <small class="text-muted">{{service.description}}</small>
+            </div>
+          </div>
+        </div>
+        <!--<div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body d-flex flex-column">
               <img src="..." alt="..." class="img-thumbnail">
@@ -36,19 +45,19 @@
               <small class="text-muted">9 mins</small>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <img src="..." alt="..." class="img-thumbnail">
-              <p class="text-monospace">This is in monospace</p>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
+        </div>-->
       </div>
       <div class="row mt-4">
-        <div class="col-md-4">
+        <!--<div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <img src="..." alt="..." class="img-thumbnail">
+              <p class="text-monospace">This is in monospace</p>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>-->
+        <!--<div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body d-flex flex-column">
               <img src="..." alt="..." class="img-thumbnail">
@@ -65,19 +74,19 @@
               <small class="text-muted">9 mins</small>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <img src="..." alt="..." class="img-thumbnail">
-              <p class="text-monospace">This is in monospace</p>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
+        </div>-->
       </div>
       <div class="row mt-4">
-        <div class="col-md-4">
+        <!--<div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <img src="..." alt="..." class="img-thumbnail">
+              <p class="text-monospace">This is in monospace</p>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>-->
+        <!--<div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body d-flex flex-column">
               <img src="..." alt="..." class="img-thumbnail">
@@ -94,16 +103,7 @@
               <small class="text-muted">9 mins</small>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <img src="..." alt="..." class="img-thumbnail">
-              <p class="text-monospace">This is in monospace</p>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>

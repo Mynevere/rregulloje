@@ -19,7 +19,6 @@ export class CompanyComponent implements OnInit {
 
 
   getCompany(id: number) {
-    debugger
     this.companyService.getCompany(id).subscribe(response => {
       this.company = response;
     });

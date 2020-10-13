@@ -50,6 +50,8 @@
     <None Include="RregullojeWebAPI\node_modules\font-awesome\scss\_screen-reader.scss" />
     <None Include="RregullojeWebAPI\node_modules\font-awesome\scss\_stacked.scss" />
     <None Include="RregullojeWebAPI\node_modules\font-awesome\scss\_variables.scss" />
+    <None Include="wwwroot\images\services\rryma.jpg" />
+    <None Include="wwwroot\images\services\uji.png" />
   </ItemGroup>
 
   <ItemGroup>

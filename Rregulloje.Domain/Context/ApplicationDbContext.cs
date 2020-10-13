@@ -99,7 +99,7 @@ namespace Rregulloje.Domain.Context
 
                 entity.Property(e => e.Name)
                       .IsRequired()
-                      .HasMaxLength(20);
+                      .HasMaxLength(500);
 
             });
 
@@ -122,10 +122,10 @@ namespace Rregulloje.Domain.Context
             });
 
             modelBuilder.Entity<MinServices>()
-            .HasOne(p => p.ServiceType)
+            .HasOne(p => p.Service)
             .WithMany()
-            .HasForeignKey(p => p.ServiceTypeId)
-            .HasConstraintName("FK_ServiceType_ServiceTypeId");
+            .HasForeignKey(p => p.ServiceId)
+            .HasConstraintName("FK_Service_ServiceId");
 
             modelBuilder.Entity<ExtraServices>(entity =>
             {
@@ -153,11 +153,11 @@ namespace Rregulloje.Domain.Context
 
             });
 
-            modelBuilder.Entity<Service>()
-            .HasOne(p => p.MinService)
-            .WithMany()
-            .HasForeignKey(p => p.MinServiceId)
-            .HasConstraintName("FK_Services_MinServiceId");
+            //modelBuilder.Entity<Service>()
+            //.HasOne(p => p.MinService)
+            //.WithMany()
+            //.HasForeignKey(p => p.MinServiceId)
+            //.HasConstraintName("FK_Services_MinServiceId");
 
             base.OnModelCreating(modelBuilder);
 
