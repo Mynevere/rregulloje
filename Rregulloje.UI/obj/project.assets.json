@@ -8885,6 +8885,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
       "Rregulloje.Application >= 1.0.0",
       "Rregulloje.Domain >= 1.0.0",
+      "Rregulloje.Infrastructure.Data >= 1.0.0",
       "Rregulloje.Infrastructure.IoC >= 1.0.0",
       "Swashbuckle.AspNetCore.SwaggerGen >= 5.6.3",
       "Swashbuckle.AspNetCore.SwaggerUI >= 5.6.3"
@@ -8925,6 +8926,9 @@
             },
             "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Domain\\Rregulloje.Domain.csproj": {
               "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Domain\\Rregulloje.Domain.csproj"
+            },
+            "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.Data\\Rregulloje.Infrastructure.Data.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.Data\\Rregulloje.Infrastructure.Data.csproj"
             },
             "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj": {
               "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj"

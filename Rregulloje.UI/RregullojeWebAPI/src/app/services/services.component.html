@@ -22,8 +22,8 @@
         <div class="col-md-4" *ngFor="let service of companyServices">
           <div class="card h-100 shadow-sm">
             <div class="card-body d-flex flex-column">
-              <img src="" alt="..." class="img-thumbnail" >
-              <p class="text-monospace">{{service.name}}</p>
+              <img src="{{service.pictureUrl}}" alt="{{service.pictureUrl}}" class="img-thumbnail">
+              <p class="text-monospace text-uppercase font-weight-bold">{{service.name}}</p>
               <small class="text-muted">{{service.description}}</small>
             </div>
           </div>

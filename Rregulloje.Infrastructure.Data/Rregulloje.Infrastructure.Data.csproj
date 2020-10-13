@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="DataEnums\" />
-    <Folder Include="Helpers\" />
   </ItemGroup>
 
   <ItemGroup>
