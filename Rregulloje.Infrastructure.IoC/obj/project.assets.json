@@ -5124,11 +5124,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj",
       "projectName": "Rregulloje.Infrastructure.IoC",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.IoC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5147,8 +5147,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj"
             }
           }
         }

@@ -5106,11 +5106,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj",
       "projectName": "Rregulloje.Application",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Application\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5129,11 +5129,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Domain\\Rregulloje.Domain.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Domain\\Rregulloje.Domain.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Domain\\Rregulloje.Domain.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Domain\\Rregulloje.Domain.csproj"
             },
-            "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.Data\\Rregulloje.Infrastructure.Data.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.Data\\Rregulloje.Infrastructure.Data.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.Data\\Rregulloje.Infrastructure.Data.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.Data\\Rregulloje.Infrastructure.Data.csproj"
             }
           }
         }
