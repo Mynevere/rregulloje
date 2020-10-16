@@ -1,34 +1,76 @@
-<!--Contact-->
-  <div class="container-fluid">
-    <div class="contact-us">
-      <!--<form>-->
-      <div class="container-fluid bg-grey contactUs">
-        <h2 class="text-center">CONTACT</h2>
+<section class="featured">
+  <div class="d-flex justify-content-center pt-4">
+    <h1>Na kontaktoni</h1>
+  </div>
+  <hr />
+</section>
+  <div class="container  card-group h-100 shadow-sm mb-5 mt-5">
+    <div class="container-fluid">
+      <section class="mb-4">
+        <h2 class="h1-responsive font-weight-bold text-center my-4 text-uppercase">Duararti mendon per ju</h2>
+        <p class="text-center w-responsive mx-auto mb-5">
+          A keni ndonje pyetje? Ju lutemi mos hezitoni te na kontaktoni. Ekipi yne do te pergjigjet sa me shpejte qe te jete e mundur, per secilen pyetje qe ju beni.
+        </p>
+
         <div class="row">
-          <div class="col-sm-5">
-            <p>Na kontaktoni per me shume detaje</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> Prishtine, Kosove</p>
-            <p><span class="glyphicon glyphicon-phone"></span> +383 45 503 737</p>
-            <p><span class="glyphicon glyphicon-envelope"></span>myneverehyseni@gmail.com</p>
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="name" name="name" class="form-control">
+                    <label for="name" class="">Emri juaj</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="email" name="email" class="form-control">
+                    <label for="email" class="">Emaili juaj</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <input type="text" id="subject" name="subject" class="form-control">
+                    <label for="subject" class="">Tema</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                    <label for="message">Shkruani mesazhin..</label>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <div class="text-center text-md-left">
+              <a class="btn btn-outline-warning text-dark">Send</a>
+            </div>
+            <div class="status"></div>
           </div>
-          <div class="col-sm-7">
-            <div class="row">
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-              </div>
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-              </div>
-            </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-            <div class="row">
-              <div class="col-sm-12 form-group">
-                <button class="btn btn-default pull-right" type="submit">Send</button>
-              </div>
-            </div>
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>Prishtine, Kosove</p>
+              </li>
+
+              <li>
+                <i class="fas fa-phone mt-4 fa-2x"></i>
+                <p>+383 44 757 838</p>
+              </li>
+
+              <li>
+                <i class="fas fa-envelope mt-4 fa-2x"></i>
+                <p>duararti@gmail.com</p>
+              </li>
+            </ul>
           </div>
         </div>
+      </section>
       </div>
-      <!--</form>-->
-    </div>
-  </div>
+</div>
