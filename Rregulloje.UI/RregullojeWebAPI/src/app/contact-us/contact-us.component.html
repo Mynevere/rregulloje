@@ -14,17 +14,17 @@
 
         <div class="row">
           <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form">
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="contact-form" name="contact-form" novalidate>
               <div class="row">
                 <div class="col-md-6">
                   <div class="md-form mb-0">
-                    <input type="text" id="name" name="name" class="form-control">
+                    <input type="text" id="name" name="name" class="form-control" formControlName="name">
                     <label for="name" class="">Emri juaj</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="md-form mb-0">
-                    <input type="text" id="email" name="email" class="form-control">
+                    <input type="text" id="email" name="email" class="form-control" formControlName="email">
                     <label for="email" class="">Emaili juaj</label>
                   </div>
                 </div>
@@ -32,24 +32,25 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="md-form mb-0">
-                    <input type="text" id="subject" name="subject" class="form-control">
-                    <label for="subject" class="">Tema</label>
+                    <input type="text" id="subject" name="subject" class="form-control" formControlName="subject">
+                    <label for="subject" class="">Titulli</label>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12">
                   <div class="md-form">
-                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" formControlName="message"></textarea>
                     <label for="message">Shkruani mesazhin..</label>
                   </div>
                 </div>
               </div>
-            </form>
 
-            <div class="text-center text-md-left">
-              <a class="btn btn-outline-warning text-dark">Send</a>
-            </div>
+
+              <div class="text-center text-md-left">
+                <button class="btn btn-outline-warning text-dark" type="submit">Send</button>
+              </div>
+            </form>
             <div class="status"></div>
           </div>
           <div class="col-md-3 text-center">

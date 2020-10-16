@@ -15,11 +15,13 @@ namespace Rregulloje.Infrastructure.IoC
         {
             //Application Layer 
             services.AddScoped<ICompanyService, CompanyService>();
-            services.AddScoped<IServicesService, ServicesService>();  
+            services.AddScoped<IServicesService, ServicesService>();
+            services.AddScoped<ISettingsService, SettingsService>();
 
             //Infrastructure.Data Layer
             services.AddScoped<ICompanyRepository, CompanyRepository>();
-            services.AddScoped<IServicesRepository, ServicesRepository>(); 
+            services.AddScoped<IServicesRepository, ServicesRepository>();
+            services.AddScoped<ISettingsRepository, SettingsRepository>();
         }
     }
 }
