@@ -22,6 +22,7 @@ namespace Rregulloje.Infrastructure.IoC
             services.AddScoped<ICompanyRepository, CompanyRepository>();
             services.AddScoped<IServicesRepository, ServicesRepository>();
             services.AddScoped<ISettingsRepository, SettingsRepository>();
+            services.AddScoped<IOperatorSettingsRepository, OperatorSettingsRepository>();
         }
     }
 }

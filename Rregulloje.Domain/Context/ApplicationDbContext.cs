@@ -27,6 +27,7 @@ namespace Rregulloje.Domain.Context
         public virtual DbSet<MinServices> MinServices { get; set; }
         public virtual DbSet<Service> Services { get; set; }
         public virtual DbSet<ExtraServices> ExtraServices { get; set; }
+        public virtual DbSet<OperatorSettings> OperatorSettings { get; set; } 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
