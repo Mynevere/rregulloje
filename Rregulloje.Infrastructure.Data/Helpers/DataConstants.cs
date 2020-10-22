@@ -16,6 +16,9 @@ namespace Rregulloje.Infrastructure.Data.Helpers
             public const string SendEmail = "SendEmail";
 
             public const string SendUserMessageEmail = "SendUserMessageEmail";
+
+            public const string SendIssueEmail = "SendIssueEmail";
+
         }
 
         public class Settings

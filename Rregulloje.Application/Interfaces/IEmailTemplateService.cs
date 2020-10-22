@@ -9,5 +9,6 @@ namespace Rregulloje.Application.Interfaces
     public interface IEmailTemplateService
     {
         public Task<bool> SendUserMessageEmail(UserMessageEmailViewModel contactUsViewModel);
+        public Task<bool> SendIssueEmail(IssueViewModel issueViewModel); 
     }
 }

@@ -24,5 +24,13 @@ namespace Rregulloje.UI.Controllers
 
             return Ok();
         }
+
+        [HttpPost("sendIssueEmail")]
+        public async Task<IActionResult> SendIssueEmail([FromBody]IssueViewModel issueViewModel)
+        {
+            var emails = await _emailTemplateService.SendIssueEmail(issueViewModel);
+
+            return Ok();
+        }
     }
 }

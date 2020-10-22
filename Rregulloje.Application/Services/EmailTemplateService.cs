@@ -32,5 +32,12 @@ namespace Rregulloje.Application.Services
             return await _emailTemplateRepository.SendUserMessageEmail(userEmailMessage);
 
         }
+
+        public async Task<bool> SendIssueEmail(IssueViewModel issueViewModel)
+        {
+            var issueEmail = _mapper.Map<Issue>(issueViewModel);
+            return await _emailTemplateRepository.SendIssueEmail(issueEmail); 
+
+        }
     }
 }

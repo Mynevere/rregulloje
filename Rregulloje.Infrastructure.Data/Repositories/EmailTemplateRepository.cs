@@ -61,5 +61,32 @@ namespace Rregulloje.Infrastructure.Data.Repositories
 
             return false;
         }
+
+        public async Task<bool> SendIssueEmail(Issue issue)
+        {
+            var emailTemplate = await GetEmailTemplate(name: DataConstants.EmailTemplates.SendIssueEmail);
+
+            string clientBaseUrl = await GetSettingsByKey(DataConstants.Settings.ClientBaseUrl);
+
+            if (emailTemplate != null)
+            {
+
+                emailTemplate.Body = emailTemplate.Body.Replace("{{EMAIL}}", issue.Email)
+                    .Replace("{{NAME}}", issue.Name)
+                    .Replace("{{LASTNAME}}", issue.LastName)
+                    .Replace("{{LIVINGOBJECT}}", issue.LivingObject)
+                    .Replace("{{LIVINGENTRYNUMBER}}", issue.LivingEntryNumber)
+                    .Replace("{{APPARTMENTNUMBER}}", issue.AppartmentNumber)
+                    .Replace("{{PHONENUMBER}}", issue.PhoneNumber)
+                    .Replace("{{SUBJECT}}", issue.IssueSubject)
+                    .Replace("{{MESSAGE}}", issue.Message);
+
+                var result = _sendEmailRepository.SendEmail(emailTemplate, issue.ToEmail);
+
+                return result;
+            }
+
+            return false;
+        }
     }
 }

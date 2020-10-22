@@ -16,13 +16,5 @@ namespace Rregulloje.Infrastructure.Data.Repositories
         {
             _context = context;
         }
-
-        //public async Task<ContactUs> SendMessage(ContactUs contactUs)
-        //{
-        //    _context.ContactUs.Add(contactUs);
-        //    await _context.SaveChangesAsync();
-
-        //    return contactUs;
-        //}
     }
 }

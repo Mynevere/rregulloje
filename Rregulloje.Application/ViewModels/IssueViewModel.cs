@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Rregulloje.Domain.Models
+namespace Rregulloje.Application.ViewModels
 {
-    public class Issue
+    public class IssueViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

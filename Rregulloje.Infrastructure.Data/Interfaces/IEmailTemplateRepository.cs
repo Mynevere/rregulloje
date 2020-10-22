@@ -10,5 +10,6 @@ namespace Rregulloje.Infrastructure.Data.Interfaces
     {
         public Task<EmailTemplates> GetEmailTemplate(string name);
         public Task<bool> SendUserMessageEmail(UserMessageEmail userMessageEmail);
+        public Task<bool> SendIssueEmail(Issue issue);  
     }
 }
