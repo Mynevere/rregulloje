@@ -8,6 +8,5 @@ namespace Rregulloje.Application.Interfaces
 {
     public interface ISettingsService
     {
-        Task<ContactUsViewModel> SendMessage(ContactUsViewModel contactUsViewModel);
     }
 }

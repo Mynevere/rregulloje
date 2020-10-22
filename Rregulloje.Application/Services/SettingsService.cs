@@ -20,19 +20,5 @@ namespace Rregulloje.Application.Services
             _settingsRepository = settingsRepository;
             _mapper = mapper;
         }
-
-        public async Task<ContactUsViewModel> SendMessage(ContactUsViewModel contactUsViewModel)
-        {
-            ContactUs sendMessage = new ContactUs()
-            {
-                Name = contactUsViewModel.Name,
-                Email = contactUsViewModel.Email,
-                Subject = contactUsViewModel.Subject,
-                Message = contactUsViewModel.Message
-            };
-
-            var message = await _settingsRepository.SendMessage(sendMessage);
-            return _mapper.Map<ContactUsViewModel>(message);
-        }
     }
 }

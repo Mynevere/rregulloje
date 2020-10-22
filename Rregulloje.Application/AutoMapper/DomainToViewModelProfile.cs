@@ -12,8 +12,8 @@ namespace Rregulloje.Application.AutoMapper
             CreateMap<Service, ServicesViewModel>()
                 .ForMember(d => d.PictureUrl, o => o.MapFrom<ServiceUrlReslover>());
             CreateMap<ServicesViewModel, Service>();
-            CreateMap<ContactUs, ContactUsViewModel>();
-            CreateMap<ContactUsViewModel, ContactUs>();
+            CreateMap<UserMessageEmail, UserMessageEmailViewModel>();
+            CreateMap<UserMessageEmailViewModel, UserMessageEmail>();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Rregulloje.Domain.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using Rregulloje.Domain.Context;
 using Rregulloje.Domain.Models;
 using Rregulloje.Infrastructure.Data.Interfaces;
 using System;

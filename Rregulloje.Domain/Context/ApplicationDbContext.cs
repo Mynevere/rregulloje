@@ -21,13 +21,15 @@ namespace Rregulloje.Domain.Context
         }
 
         public virtual DbSet<Company> Company { get; set; }
-        public virtual DbSet<ContactUs> ContactUs { get; set; }
         public virtual DbSet<Issue> Issue { get; set; }
         public virtual DbSet<ServiceType> ServiceType { get; set; }
         public virtual DbSet<MinServices> MinServices { get; set; }
         public virtual DbSet<Service> Services { get; set; }
         public virtual DbSet<ExtraServices> ExtraServices { get; set; }
         public virtual DbSet<OperatorSettings> OperatorSettings { get; set; } 
+        public virtual DbSet<EmailTemplates> EmailTemplates { get; set; }
+        public virtual DbSet<Settings> Settings { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -43,16 +45,6 @@ namespace Rregulloje.Domain.Context
                 entity.Property(e => e.Description)
                 .IsRequired()
                 .HasMaxLength(1000);
-            });
-
-            modelBuilder.Entity<ContactUs>(entity =>
-            {
-                entity.HasKey(e => e.Id)
-                    .HasName("PK_ContactUs_Id");
-
-                entity.Property(e => e.Name)
-                      .IsRequired()
-                      .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Issue>(entity =>
@@ -152,6 +144,12 @@ namespace Rregulloje.Domain.Context
                 .IsRequired()
                 .HasMaxLength(1000);
 
+            });
+
+            modelBuilder.Entity<EmailTemplates>(entity =>
+            {
+                entity.HasKey(e => e.EmailTemplateId)
+                      .HasName("PK_EmailTemplates_EmailTemplateId");
             });
 
             //modelBuilder.Entity<Service>()

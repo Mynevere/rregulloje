@@ -4,12 +4,16 @@ using System.Text;
 
 namespace Rregulloje.Domain.Models
 {
-    public class ContactUs
+    public class EmailTemplates
     {
-        public int Id { get; set; }
+        public int EmailTemplateId { get; set; }
+
         public string Name { get; set; }
-        public string Email { get; set; }
+
         public string Subject { get; set; }
-        public string Message { get; set; }
+
+        public string Body { get; set; }
+
+        public bool IsBodyHtml { get; set; }
     }
 }

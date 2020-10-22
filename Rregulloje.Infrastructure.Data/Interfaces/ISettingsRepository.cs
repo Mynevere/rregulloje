@@ -8,6 +8,6 @@ namespace Rregulloje.Infrastructure.Data.Interfaces
 {
     public interface ISettingsRepository
     {
-        Task<ContactUs> SendMessage(ContactUs contactUs);
+        //Task<ContactUs> SendMessage(ContactUs contactUs);
     }
 }

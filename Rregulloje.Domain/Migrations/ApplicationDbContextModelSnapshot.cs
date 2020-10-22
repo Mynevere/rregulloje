@@ -242,31 +242,29 @@ namespace Rregulloje.Domain.Migrations
                     b.ToTable("Company");
                 });
 
-            modelBuilder.Entity("Rregulloje.Domain.Models.ContactUs", b =>
+            modelBuilder.Entity("Rregulloje.Domain.Models.EmailTemplates", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("EmailTemplateId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Email")
+                    b.Property<string>("Body")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("IsBodyHtml")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Subject")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id")
-                        .HasName("PK_ContactUs_Id");
+                    b.HasKey("EmailTemplateId")
+                        .HasName("PK_EmailTemplates_EmailTemplateId");
 
-                    b.ToTable("ContactUs");
+                    b.ToTable("EmailTemplates");
                 });
 
             modelBuilder.Entity("Rregulloje.Domain.Models.ExtraServices", b =>
@@ -445,6 +443,24 @@ namespace Rregulloje.Domain.Migrations
                     b.HasIndex("MinServiceId");
 
                     b.ToTable("ServiceType");
+                });
+
+            modelBuilder.Entity("Rregulloje.Domain.Models.Settings", b =>
+                {
+                    b.Property<int>("SettingsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Key")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SettingsId");
+
+                    b.ToTable("Settings");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

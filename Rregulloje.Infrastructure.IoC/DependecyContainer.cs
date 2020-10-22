@@ -17,12 +17,16 @@ namespace Rregulloje.Infrastructure.IoC
             services.AddScoped<ICompanyService, CompanyService>();
             services.AddScoped<IServicesService, ServicesService>();
             services.AddScoped<ISettingsService, SettingsService>();
+            services.AddScoped<IEmailTemplateService, EmailTemplateService>();
 
             //Infrastructure.Data Layer
             services.AddScoped<ICompanyRepository, CompanyRepository>();
             services.AddScoped<IServicesRepository, ServicesRepository>();
             services.AddScoped<ISettingsRepository, SettingsRepository>();
             services.AddScoped<IOperatorSettingsRepository, OperatorSettingsRepository>();
+            services.AddScoped<IEmailTemplateRepository, EmailTemplateRepository>();
+            services.AddScoped<ISendEmailRepository, SendEmailRepository>();
+            services.AddScoped<ISettingsRepository, SettingsRepository>();
         }
     }
 }

@@ -10,18 +10,19 @@ namespace Rregulloje.UI.Controllers
 {
     public class SettingsController : BaseApiController
     {
-        private readonly ISettingsService _settingsService;
+        private readonly IEmailTemplateService _emailTemplateService; 
 
-        public SettingsController(ISettingsService settingsService)
+        public SettingsController(IEmailTemplateService emailTemplateService)
         {
-            _settingsService = settingsService;
+            _emailTemplateService = emailTemplateService;
         }
 
-        [HttpPost("sendMessage")]
-        public async Task<IActionResult> SendMessage(ContactUsViewModel contactUsViewModel) 
+        [HttpPost("sendUserMessageEmail")]
+        public async Task<IActionResult> SendUserMessageEmail([FromBody]UserMessageEmailViewModel userMessageEmailView)
         {
-            var sendMessage = await _settingsService.SendMessage(contactUsViewModel);
-            return Ok(sendMessage);
+            var emails = await _emailTemplateService.SendUserMessageEmail(userMessageEmailView);
+
+            return Ok();
         }
     }
 }
