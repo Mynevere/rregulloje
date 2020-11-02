@@ -4,6 +4,7 @@ import { CompanyComponent } from './company/company.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { ReportIssueComponent } from './report-issue/report-issue.component';
 import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: "contact-us", component: ContactUsComponent },
   { path: "services", component: ServicesComponent },
   { path: "company", component: CompanyComponent },
+  { path: "report-issue", component: ReportIssueComponent },
 
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: '**', component: HomeComponent }

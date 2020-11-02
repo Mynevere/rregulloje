@@ -14,6 +14,7 @@ import { CompanyComponent } from './company/company.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ReportIssueComponent } from './report-issue/report-issue.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContactUsComponent,
     ServicesComponent,
     CompanyComponent,
+    ReportIssueComponent,
   ],
   imports: [
     HttpClientModule,
