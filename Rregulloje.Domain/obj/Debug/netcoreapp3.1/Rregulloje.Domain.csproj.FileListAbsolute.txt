@@ -4,5 +4,6 @@ C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Domain\bin\Debug\netcoreapp3.1
 C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Domain\obj\Debug\netcoreapp3.1\Rregulloje.Domain.csprojAssemblyReference.cache
 C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Domain\obj\Debug\netcoreapp3.1\Rregulloje.Domain.AssemblyInfoInputs.cache
 C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Domain\obj\Debug\netcoreapp3.1\Rregulloje.Domain.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Domain\obj\Debug\netcoreapp3.1\Rregulloje.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Domain\obj\Debug\netcoreapp3.1\Rregulloje.Domain.dll
 C:\Users\Admin\source\repos\Rregulloje\Rregulloje.Domain\obj\Debug\netcoreapp3.1\Rregulloje.Domain.pdb

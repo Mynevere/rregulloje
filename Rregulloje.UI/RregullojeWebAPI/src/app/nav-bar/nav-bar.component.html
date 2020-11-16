@@ -1,14 +1,16 @@
-<div class="container-fluid">
+<!--<div class="container-fluid">
   <div class="d-flex flex-column flex-md-row align-items-center
        justify-content-between p-3 px-md-4 mb-3 bg-white
        border-bottom shadow-sm fixed-top">
     <img src="/assets/images/logo.png" style="max-height:70px;" alt="logo" class="logo" routerLink="home" />
-    <nav class="my-2 my-md-0 mr-md-3 text-uppercase" style="font-size:larger;">
-      <a class="p-2" routerLink="home" routerLinkActive="active"
-         [routerLinkActiveOptions]="{exact: true}">Rregulloje</a>
-      <a class="p-2" routerLink="services" routerLinkActive="active">Shërbimet</a>
-      <a class="p-2" routerLink="company">Kompania</a>
-      <a class="p-2" routerLink="contact-us" routerLinkActive="active">Kontakti</a>
+    <nav class="my-2 my-md-0 mr-md-3 text-uppercase">
+      <div class="container-fluid">
+          <a class="p-2" routerLink="home" routerLinkActive="active"
+             [routerLinkActiveOptions]="{exact: true}">Rregulloje</a>
+          <a class="p-2" routerLink="services" routerLinkActive="active">Shërbimet</a>
+          <a class="p-2" routerLink="company">Kompania</a>
+          <a class="p-2" routerLink="contact-us" routerLinkActive="active">Kontakti</a>
+      </div>
     </nav>
     <div class="d-flex align-items-center">
       <a class="btn btn-outline-warning mr-2 text-dark" routerLink="report-issue">Raporto Prishjen</a>
@@ -19,6 +21,36 @@
   <div class="container-fluid">
     <slide>
       <img class="img" src="assets/images/slide1.jpg" alt="first slide" style="display:block; min-width:100%;"/>
+    </slide>
+    <slide>
+      <img class="img" src="assets/images/slide2.jpg" alt="second slide" style="display:block; min-width:100%" />
+    </slide>
+    <slide>
+      <img class="img" src="assets/images/slide3.jpg" alt="third slide" style="display:block; min-width:100%;" />
+    </slide>
+  </div>
+</carousel>-->
+<mdb-navbar SideClass="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+  <mdb-navbar-brand>
+    <img src="/assets/images/logo.png" style="max-height:70px;" alt="logo" class="logo" routerLink="home" />
+  </mdb-navbar-brand>
+  <links>
+    <div class="navbar-nav text-uppercase">
+      <a class="nav-item nav-link active waves-light" mdbWavesEffect routerLink="home" routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact: true}">Rregulloje<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link waves-light" mdbWavesEffect routerLink="services" routerLinkActive="active">Shërbimet</a>
+      <a class="nav-item nav-link waves-light" mdbWavesEffect routerLink="company" routerLinkActive="active">Kompania</a>
+      <a class="nav-item nav-link waves-light" mdbWavesEffect routerLink="contact-us" routerLinkActive="active">Kontakti</a>
+    </div>
+    <div class="d-flex align-items-center">
+      <button mdbBtn type="button" color="warning" outline="true" rounded="true" routerLink="report-issue" mdbWavesEffect>Raporto Prishjen</button>
+    </div>
+  </links>
+</mdb-navbar>
+<carousel>
+  <div class="container-fluid">
+    <slide>
+      <img class="img" src="assets/images/slide1.jpg" alt="first slide" style="display:block; min-width:100%;" />
     </slide>
     <slide>
       <img class="img" src="assets/images/slide2.jpg" alt="second slide" style="display:block; min-width:100%" />

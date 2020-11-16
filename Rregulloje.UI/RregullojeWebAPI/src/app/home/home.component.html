@@ -1,82 +1,88 @@
-  <!--<carousel>
-    <slide>
-      <img src="assets/images/slide1.jpg" alt="first slide" style="display:block; min-width:100%;"/>
-    </slide>
-    <slide>
-      <img src="assets/images/slide2.jpg" alt="second slide" style="display:block; min-width:100%" />
-    </slide>
-    <slide>
-      <img src="assets/images/slide3.jpg" alt="third slide" style="display:block; min-width:100%;" />
-    </slide>
-  </carousel>-->
 <section class="featured">
   <div class="d-flex justify-content-center pt-4 text-uppercase">
     <h1>{{company.name}}</h1>
   </div>
   <hr />
 </section>
-<div class="container">
-  <div class="container  card-group h-100 shadow-sm mb-5 mt-5">
-    <div class="container-fluid">
-      <div class="row">
+
+  <div class="container-fluid">
+    <div class="container-fluid card-group h-100 shadow-sm mb-5 mr-5 mr-5 mt-5 p-0">
+      <!--<div class="container-fluid">-->
+      <!--<div class="container-fluid row mb-2 ml-5 mr-5 mb-5 text-center">
         <div class="col-sm-8 mt-4 pl-5 pb-5">
           <h2>Rreth Kompanisë</h2>
           <h4 class="text-uppercase">{{company.name}}</h4>
           <p>{{company.description}}</p>
-          <!--<button class="btn btn-outline-warning btn-lg" routerLink="../company">Lexo më shumë</button>-->
           <div class="d-flex align-items-center">
-            <a class="btn btn-outline-warning mr-2 text-dark" routerLink="../company">Lexo më shumë</a>
+            <button mdbBtn type="button" color="warning" outline="true" routerLink="../company" mdbWavesEffect>Lexo më shumë</button>
           </div>
         </div>
         <div class="col-sm-4">
           <span class="glyphicon glyphicon-signal logo"></span>
         </div>
-      </div>
-      <div class="row mb-2 ml-5 mr-5 mb-5">
-        <div class="col-md-6">
+      </div>-->
+      <!--<div class="container-fluid row mb-2 ml-5 mr-5 mb-5">
+        <div class="col">
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-success">Kosove</strong>
-              <h3 class="mb-0">Qytetet ku operojme</h3>
-              <h5 class="card-text mb-auto">Sherbimet tona mund ti kryejm ne:</h5>
-              <ul>
-                <li>Prishtine dhe rrethine</li>
-              </ul>
+              <h1>PRISHTINE</h1>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+      </div>-->
+      <div class="container-fluid row mb-2  mb-5">
+        <div class="container-fluid mt-5 mb-5" style="width: 75%;">
+          <h2 class="text-center text-uppercase">Sherbimet Tona</h2>
+          <p class="description text-center" style="font-family:Roboto, sans-serif">
+            Me mbi 15 vite ekperience dhe fokus real ne kerkesat e klienteve, ju mund te na besoni neve realizimin e renovimit tuaj,
+            <br>poashtu dhe rregullimin e te gjitha pjeseve shtepiake. Ne sigurojme sherbime profesionale per klientet tone.
+          </p>
+          <ul class="row list-unstyled">
+            <li class="col-sm">
+              <a title="Interior Renovation">
+                <img src="assets/images/image_01.jpg" alt="" style="display: block;">
+              </a>
+              <h4 class="box-header"><a href="?page=service_interior_renovation" title="Interior Renovation">INTERIOR RENOVATION</a></h4>
+              <p>We can help you bring new life to existing rooms and develop unused spaces.</p>
+            </li>
+            <li class="col-sm">
+              <a href="?page=service_design_build" title="Design and Build">
+                <img src="assets/images/image_02.jpg" alt="" style="display: block;">
+              </a>
+              <h4 class="box-header"><a href="?page=service_design_build" title="Design and Build">DESIGN AND BUILD</a></h4>
+              <p>From initial design and project specification to archieving a high end finish.</p>
+            </li>
+            <li class="col-sm">
+              <a href="?page=service_tiling_painting" title="Tiling and Painting">
+                <img src="assets/images/image_03.jpg" alt="" style="display: block;">
+              </a>
+              <h4 class="box-header"><a href="?page=service_tiling_painting" title="Tiling and Painting">TILING AND PAINTING</a></h4>
+              <p>We offer quality tiling and painting solutions for interior and exterior.</p>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center justify-content-sm-center">
+            <button mdbBtn type="button" color="warning" outline="true" routerLink="../services" mdbWavesEffect>Shiko te gjitha</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid bg-info">
+
+      </div>
+      <!--<div class="container-fluid row mb-2 ml-5 mr-5 mb-5">
+        <div class="col">
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-success">Rrjetet Sociale</strong>
-              <h3 class="mb-0">Mund te na gjeni edhe ne:</h3>
               <button type="button" mdbBtn color="fb" class="waves-light" mdbWavesEffect><i class="fab fa-facebook-f left"></i>Facebook</button>
               <button type="button" mdbBtn color="ins" class="waves-light" mdbWavesEffect><i class="fab fa-instagram left"></i>Instagram</button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row mb-2 ml-5 mr-5 mb-5">
-        <div class="col">
-          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-success">Sherbimet</strong>
-              <h3 class="mb-0">Cka ne ofrojme?</h3>
-              <p class="mb-auto">
-                Duararti është gjithmonë i gatshëm të rregulloj çdo problem që ju mund të keni në shtëpinë apo zyrën tuaj.
-                Stafi ynë ofron shërbime profesionale dhe efikase, me kujdes të veçantë që çdo nevojë e juaj të ketë një zgjidhje të thjeshtë dhe të shpejtë.
-                Shërbimet e Duarartit përfshijnë: riparimet e bojlerit, problemet me lavatriqe, ndërrimin e siguresave dhe prizave, riparimet e dyerve dhe dritareve,
-                ndërrimin e bravave e shume e shume
-                <a routerLink="../services" class="stretched-link">sherbime tjera.</a>
-              </p>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-              <img src="assets/images/hand.jpg" style=" width:200px; height:250px;" />
-            </div>
-          </div>
-        </div>
-      </div>
+      </div>-->
+      <!--</div>-->
+
     </div>
-  </div>
   </div>
 

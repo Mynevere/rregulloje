@@ -8898,11 +8898,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj",
       "projectName": "Rregulloje.UI",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.UI\\Rregulloje.UI.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.UI\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8921,17 +8921,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Application\\Rregulloje.Application.csproj"
             },
-            "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Domain\\Rregulloje.Domain.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Domain\\Rregulloje.Domain.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Domain\\Rregulloje.Domain.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Domain\\Rregulloje.Domain.csproj"
             },
-            "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.Data\\Rregulloje.Infrastructure.Data.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.Data\\Rregulloje.Infrastructure.Data.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.Data\\Rregulloje.Infrastructure.Data.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.Data\\Rregulloje.Infrastructure.Data.csproj"
             },
-            "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Rregulloje\\Rregulloje.Infrastructure.IoC\\Rregulloje.Infrastructure.IoC.csproj"
             }
           }
         }
@@ -9012,7 +9012,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
