@@ -146,6 +146,19 @@ p {
     /*position: relative;*/
   }
 
+  .features-list li {
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .contact-details-list li p {
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFF;
+  }
+
 }
 
   @media (max-width: 575.98px) {
@@ -259,6 +272,20 @@ p {
       transform: rotateY(179.9deg);
       /*position: relative;*/
     }
+
+    .features-list li {
+      float: left;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .contact-details-list li p {
+      font-family: 'Raleway';
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFF;
+    }
+
   }
 
   @media (max-width: 767.98px) {
@@ -371,6 +398,21 @@ p {
       transform: rotateY(179.9deg);
       /*position: relative;*/
     }
+
+    .features-list li {
+      float: left;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .contact-details-list li p {
+      font-family: 'Raleway';
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFF;
+    }
+
+
   }
   /*HOMEPAGE SCSS*/
   @media (max-width: 991.98px) {
@@ -483,6 +525,20 @@ p {
       transform: rotateY(179.9deg);
       /*position: relative;*/
     }
+
+    .features-list li {
+      float: left;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .contact-details-list li p {
+      font-family: 'Raleway';
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFF;
+    }
+
   }
 
   @media (max-width: 1199.98px) {
@@ -595,6 +651,20 @@ p {
       transform: rotateY(179.9deg);
       /*position: relative;*/
     }
+
+    .features-list li {
+      float: left;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .contact-details-list li p {
+      font-family: 'Raleway';
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFF;
+    }
+
   }
 
   @media (max-width: 2818.98px) {
@@ -707,4 +777,18 @@ p {
       transform: rotateY(179.9deg);
       /*position: relative;*/
     }
+
+    .features-list li {
+      float: left;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .contact-details-list li p {
+      font-family: 'Raleway';
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFF;
+    }
+
   }
