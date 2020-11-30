@@ -41,6 +41,7 @@ export class ReportIssueComponent implements OnInit {
 
 
   onSubmit() {
+    debugger
     this.reportForm["submitted"] = true;
     if (this.reportForm.valid) {
       var issueViewModel = this.reportForm.value as IssueViewModel;
