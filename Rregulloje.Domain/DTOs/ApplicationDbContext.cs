@@ -66,16 +66,19 @@ namespace Rregulloje.Domain.Context
 
                 entity.Property(e => e.Email)
                       .IsRequired()
-                      .HasMaxLength(50);
+                      .HasMaxLength(250);
 
                 entity.Property(e => e.LivingObject)
-                      .IsRequired();
+                      .IsRequired()
+                      .HasMaxLength(200);
 
                 entity.Property(e => e.LivingEntryNumber)
-                      .IsRequired();
+                      .IsRequired()
+                      .HasMaxLength(50);
 
-                entity.Property(e => e.AppartmentNumber)
-                      .IsRequired();
+                entity.Property(e => e.ApartmentNumber)
+                      .IsRequired()
+                      .HasMaxLength(50);
 
                 entity.Property(e => e.IssueSubject)
                       .HasMaxLength(100);

@@ -74,11 +74,12 @@ namespace Rregulloje.Infrastructure.Data.Repositories
                 emailTemplate.Body = emailTemplate.Body.Replace("{{EMAIL}}", issue.Email)
                     .Replace("{{NAME}}", issue.Name)
                     .Replace("{{LASTNAME}}", issue.LastName)
+                    .Replace("{{CITY}}", issue.City)
                     .Replace("{{LIVINGOBJECT}}", issue.LivingObject)
                     .Replace("{{LIVINGENTRYNUMBER}}", issue.LivingEntryNumber)
-                    .Replace("{{APPARTMENTNUMBER}}", issue.AppartmentNumber)
+                    .Replace("{{APARTMENTNUMBER}}", issue.ApartmentNumber)
                     .Replace("{{PHONENUMBER}}", issue.PhoneNumber)
-                    .Replace("{{SUBJECT}}", issue.IssueSubject)
+                    .Replace("{{ISSUESUBJECT}}", issue.IssueSubject)
                     .Replace("{{MESSAGE}}", issue.Message);
 
                 var result = _sendEmailRepository.SendEmail(emailTemplate, issue.ToEmail);

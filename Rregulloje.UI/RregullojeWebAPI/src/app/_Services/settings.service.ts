@@ -1,7 +1,5 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
 import { IssueViewModel } from '../_ViewModels/IssueViewModel';
 import { UserMessageEmailViewModel } from '../_ViewModels/UserMessageEmailViewModel';
@@ -19,7 +17,6 @@ export class SettingsService {
   }
 
   sendIssueEmail(issueViewModel: IssueViewModel) {
-    debugger
     return this.http.post(this.baseUrl + 'sendIssueEmail', issueViewModel);
   }
 }

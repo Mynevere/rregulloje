@@ -27,14 +27,14 @@ export class ReportIssueComponent implements OnInit {
       name: ['', Validators.required],
       lastname: ['', Validators.required],
       phonenumber: ['', Validators.required],
-      fromEmail: ['', [Validators.required, Validators
+      email: ['', [Validators.required, Validators
         .pattern('^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$')]],
       city: ['', Validators.required],
       livingobject: ['', Validators.required],
       floor: ['', Validators.required],
-      entrynumber: ['', Validators.required],
+      livingentrynumber: ['', Validators.required],
       apartmentnumber: ['', Validators.required],
-      subject: ['', Validators.required],
+      issuesubject: ['', Validators.required],
       message: ['', Validators.required]
     });
   }

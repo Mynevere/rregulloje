@@ -16,7 +16,7 @@ namespace Rregulloje.Domain.Models
         public string LivingObject { get; set; }
         public string Floor { get; set; }
         public string LivingEntryNumber { get; set; }
-        public string AppartmentNumber { get; set; }
+        public string ApartmentNumber { get; set; } 
         public string IssueSubject { get; set; }
         public string Message { get; set; }
     }
