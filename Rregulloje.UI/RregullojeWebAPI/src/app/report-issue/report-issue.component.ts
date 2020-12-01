@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ServiceService } from '../_Services/service.service';
 import { SettingsService } from '../_Services/settings.service';
 import { IssueViewModel } from '../_ViewModels/IssueViewModel';
+import { ServiceViewModel } from '../_ViewModels/ServiceViewModel';
 
 @Component({
   selector: 'app-report-issue',
@@ -13,12 +15,13 @@ export class ReportIssueComponent implements OnInit {
   reportForm: FormGroup;
   successMsg: string;
   reportError: string;
+  companyServices: any[];
 
-  constructor(private settingsService: SettingsService, private formBuilder: FormBuilder, private router: Router) { }
+  constructor(private settingsService: SettingsService, private formBuilder: FormBuilder, private router: Router, private serviceService: ServiceService) { }
 
   ngOnInit(): void {
+    this.getServices();
     this.createForm();
-
     this.reportForm["submitted"] = false;
   }
 
@@ -34,11 +37,18 @@ export class ReportIssueComponent implements OnInit {
       floor: ['', Validators.required],
       livingentrynumber: ['', Validators.required],
       apartmentnumber: ['', Validators.required],
-      issuesubject: ['', Validators.required],
+      issuesubject: [null, Validators.required],
       message: ['', Validators.required]
     });
   }
 
+
+  getServices() {
+    this.serviceService.getServices().subscribe(response => {
+      this.companyServices = response;
+      console.log(this.companyServices);
+    })
+  }
 
   onSubmit() {
     debugger
