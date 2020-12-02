@@ -8,7 +8,7 @@
   <div class="row mt-4">
     <div class="container">
       <div class="row">
-          <div class="tp-box col-md-4 kol" *ngFor="let service of companyServices;let i = index;"
+          <div class="tp-box col-md-4" *ngFor="let service of companyServices;let i = index;"
                (mouseover)="toggleFlip(i)" (mouseout)="toggleFlip(i)" [@flipState]="isFlipped(i)">
             <div class="tp-box__side tp-box__front card h-100 shadow-sm">
               <div class="card-body d-flex flex-column">

@@ -1,5 +1,5 @@
 img {
-  object-fit: cover;
+  object-fit: contain;
   height: 600px;
   width: 100%;
 }
@@ -26,19 +26,11 @@ img {
 }
 
 .tp-box__front {
-  /*background: #f30d36;*/
-  /*position:relative;*/
+  position:fixed;
+
 }
 
 .tp-box__back {
-  /*background: #23262d;*/
   transform: rotateY(179.9deg);
-  /*position: relative;*/
-}
-
-.kol {
-  height: auto;
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
+  position: relative;
 }

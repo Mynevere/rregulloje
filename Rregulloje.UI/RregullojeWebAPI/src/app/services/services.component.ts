@@ -47,7 +47,6 @@ export class ServicesComponent implements OnInit {
   }
 
   isFlipped(i: number) {
-    console.log(this.flipped)
     return this.flipped === i ? 'active' : 'inactive';
   }
 }
