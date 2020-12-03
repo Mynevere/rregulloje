@@ -80,13 +80,16 @@ namespace Rregulloje.Domain.Context
                       .IsRequired()
                       .HasMaxLength(50);
 
-                entity.Property(e => e.IssueSubject)
-                      .HasMaxLength(100);
-
                 entity.Property(e => e.Message)
                       .IsRequired()
-                      .HasMaxLength(500);
+                      .HasMaxLength(2000);
             });
+
+            modelBuilder.Entity<Issue>()
+            .HasOne(p => p.Service)
+            .WithMany()
+            .HasForeignKey(p => p.ServiceId)
+            .HasConstraintName("FK_Issue_ServiceId");
 
             modelBuilder.Entity<ServiceType>(entity =>
             {

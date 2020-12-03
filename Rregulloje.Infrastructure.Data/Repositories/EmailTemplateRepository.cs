@@ -64,6 +64,8 @@ namespace Rregulloje.Infrastructure.Data.Repositories
 
         public async Task<bool> SendIssueEmail(Issue issue)
         {
+            issue.Service = _ctx.Services.Where(x => x.Id == issue.ServiceId).FirstOrDefault();
+
             var emailTemplate = await GetEmailTemplate(name: DataConstants.EmailTemplates.SendIssueEmail);
 
             string clientBaseUrl = await GetSettingsByKey(DataConstants.Settings.ClientBaseUrl);
@@ -79,7 +81,7 @@ namespace Rregulloje.Infrastructure.Data.Repositories
                     .Replace("{{LIVINGENTRYNUMBER}}", issue.LivingEntryNumber)
                     .Replace("{{APARTMENTNUMBER}}", issue.ApartmentNumber)
                     .Replace("{{PHONENUMBER}}", issue.PhoneNumber)
-                    .Replace("{{ISSUESUBJECT}}", issue.IssueSubject)
+                    .Replace("{{ISSUESUBJECT}}", issue.Service.Name)
                     .Replace("{{MESSAGE}}", issue.Message);
 
                 var result = _sendEmailRepository.SendEmail(emailTemplate, issue.ToEmail);

@@ -74,7 +74,7 @@
                 <div class="md-form mb-0">
                   <!--<input type="text" id="subject" name="subject" class="form-control" formControlName="issuesubject" placeholder="Titulli">
   <label for="subject"></label>-->
-                  <select appSelectArrow class="custom-select" id="issuesubject" name="issuesubject" formControlName="issuesubject">
+                  <select appSelectArrow class="custom-select" id="serviceId" name="serviceId" formControlName="serviceId">
                     <option [ngValue]="null" hidden>Zgjedhni...</option>
                     <option *ngFor="let issuesubject of companyServices" [ngValue]='issuesubject.id'>{{issuesubject.name}}</option>
                   </select>

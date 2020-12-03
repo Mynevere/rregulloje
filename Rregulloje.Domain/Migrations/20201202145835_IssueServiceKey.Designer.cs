@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Rregulloje.Domain.Context;
 
 namespace Rregulloje.Domain.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201202145835_IssueServiceKey")]
+    partial class IssueServiceKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -310,6 +312,10 @@ namespace Rregulloje.Domain.Migrations
                     b.Property<string>("Floor")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("IssueSubject")
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(20)")
@@ -327,8 +333,8 @@ namespace Rregulloje.Domain.Migrations
 
                     b.Property<string>("Message")
                         .IsRequired()
-                        .HasColumnType("nvarchar(2000)")
-                        .HasMaxLength(2000);
+                        .HasColumnType("nvarchar(500)")
+                        .HasMaxLength(500);
 
                     b.Property<string>("Name")
                         .IsRequired()

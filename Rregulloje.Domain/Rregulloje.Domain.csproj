@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <Folder Include="BaseModels\" />
-    <Folder Include="Context\" />
+    <Folder Include="DTOs\" />
     <Folder Include="IdentityModels\" />
   </ItemGroup>
 

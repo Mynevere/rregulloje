@@ -9,8 +9,9 @@ export class IssueViewModel {
   floor: string;
   livingentrynumber: string;
   apartmentnumber: string;
-  issuesubject: string;
+  //issuesubject: string;
   message: string;
+  serviceId: number;
 
   constructor(id: number = null,
     name: string = null,
@@ -22,8 +23,9 @@ export class IssueViewModel {
     floor: string = null,
     livingentrynumber: string = null,
     apartmentnumber: string = null,
-    issuesubject: string = null,
-    message: string = null) {
+    //issuesubject: string = null,
+    message: string = null,
+    serviceId: number = null) {
     this.id = id;
     this.name = name;
     this.lastName = lastName;
@@ -34,7 +36,8 @@ export class IssueViewModel {
     this.floor = floor;
     this.livingentrynumber = livingentrynumber;
     this.apartmentnumber = apartmentnumber;
-    this.issuesubject = issuesubject;
+    //this.issuesubject = issuesubject;
     this.message = message;
+    this.serviceId = serviceId;
   }
 }

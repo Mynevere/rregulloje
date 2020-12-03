@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Rregulloje.Domain.Models
@@ -17,7 +18,9 @@ namespace Rregulloje.Domain.Models
         public string Floor { get; set; }
         public string LivingEntryNumber { get; set; }
         public string ApartmentNumber { get; set; } 
-        public string IssueSubject { get; set; }
+        //public string IssueSubject { get; set; }
         public string Message { get; set; }
+        public int? ServiceId { get; set; }
+        public Service Service { get; set; }
     }
 }

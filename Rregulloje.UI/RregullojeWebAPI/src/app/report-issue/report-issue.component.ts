@@ -37,8 +37,8 @@ export class ReportIssueComponent implements OnInit {
       floor: ['', Validators.required],
       livingentrynumber: ['', Validators.required],
       apartmentnumber: ['', Validators.required],
-      issuesubject: [null, Validators.required],
-      message: ['', Validators.required]
+      message: ['', Validators.required],
+      serviceId: [null, Validators.required],
     });
   }
 
@@ -51,7 +51,6 @@ export class ReportIssueComponent implements OnInit {
   }
 
   onSubmit() {
-    debugger
     this.reportForm["submitted"] = true;
     if (this.reportForm.valid) {
       var issueViewModel = this.reportForm.value as IssueViewModel;

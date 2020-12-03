@@ -17,7 +17,8 @@ namespace Rregulloje.Application.ViewModels
         public string Floor { get; set; }
         public string LivingEntryNumber { get; set; }
         public string ApartmentNumber { get; set; }
-        public string IssueSubject { get; set; }
+        //public string IssueSubject { get; set; }
         public string Message { get; set; }
+        public int? ServiceId { get; set; } 
     }
 }

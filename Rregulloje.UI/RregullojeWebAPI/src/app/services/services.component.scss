@@ -1,36 +1,248 @@
-img {
-  object-fit: contain;
-  height: 600px;
-  width: 100%;
+@media (min-width: 375px) {
+  img {
+    object-fit: contain;
+    height: 600px;
+    max-width:100%;
+  }
+
+  .imgService {
+    height: 150px;
+  }
+
+
+  .tp-box {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin-bottom: 100%;
+  }
+
+  .tp-box__side {
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .tp-box__front {
+    /*position:fixed;*/
+  }
+
+  .tp-box__back {
+    transform: rotateY(179.9deg);
+    /*position: relative;*/
+  }
+
+  .paragraph-back {
+    margin-left: 5%;
+  }
+
+  .servicesButton {
+    margin-left: 30%;
+  }
 }
 
-.img-thumbnail {
-  height: 300px;
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+ /* .container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }*/
+
+  img {
+    object-fit: contain;
+    height: 600px;
+    width: 100%;
+  }
+
+  .imgService {
+    height: 300px;
+  }
+
+
+  .tp-box {
+    position: relative;
+    margin-bottom: 90%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+
+  .tp-box__side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    cursor: pointer;
+    user-select: none;
+  }
+
+
+  .tp-box__front {
+    /*position:fixed;*/
+    margin-left: -3%;
+  }
+
+  .tp-box__back {
+    transform: rotateY(179.9deg);
+    /*position: relative;*/
+    margin-left: -3%;
+  }
+
+  .paragraph-back {
+    margin-left: 5%;
+  }
+
+  .servicesButton {
+    margin-left: 5%;
+  }
 }
 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  img {
+    object-fit: contain;
+    height: 600px;
+    width: 100%;
+  }
 
-.tp-box {
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-  margin-bottom: 50%;
+  .imgService {
+    height: 180px;
+  }
+
+
+  .tp-box {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin-bottom: 90%;
+  }
+
+  .tp-box__side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    cursor: pointer;
+    user-select: none;
+  }
+
+
+  .tp-box__front {
+    /*position:fixed;*/
+  }
+
+  .tp-box__back {
+    transform: rotateY(179.9deg);
+    /*position: relative;*/
+  }
+
+  .paragraph-back {
+    margin-left: 5%;
+  }
+
+  .servicesButton {
+    margin-left: 5%;
+  }
 }
 
-.tp-box__side {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-  cursor: pointer;
-  user-select: none;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  img {
+    object-fit: contain;
+    height: 600px;
+    width: 100%;
+  }
+
+  .imgService {
+    height: 262px;
+  }
+
+
+  .tp-box {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin-bottom: 60%;
+  }
+
+  .tp-box__side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    cursor: pointer;
+    user-select: none;
+  }
+
+
+  .tp-box__front {
+    /*position:fixed;*/
+  }
+
+  .tp-box__back {
+    transform: rotateY(179.9deg);
+    /*position: relative;*/
+  }
+
+  .paragraph-back {
+    margin-left: 5%;
+  }
+
+  .servicesButton {
+    margin-left: 5%;
+  }
 }
 
-.tp-box__front {
-  position:fixed;
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  img {
+    object-fit: contain;
+    height: 600px;
+    width: 100%;
+  }
 
-}
+  .imgService {
+    height: 300px;
+  }
 
-.tp-box__back {
-  transform: rotateY(179.9deg);
-  position: relative;
+
+  .tp-box {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin-bottom: 50%;
+  }
+
+  .tp-box__side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    cursor: pointer;
+    user-select: none;
+  }
+
+
+  .tp-box__front {
+    /*position:fixed;*/
+  }
+
+  .tp-box__back {
+    transform: rotateY(179.9deg);
+    /*position: relative;*/
+  }
+
+  .paragraph-back {
+    margin-left: 5%;
+  }
+
+  .servicesButton {
+    margin-left: 5%;
+  }
 }
