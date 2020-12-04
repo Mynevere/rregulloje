@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NavbarComponent } from 'angular-bootstrap-md/lib/free/navbars/navbar.component';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   isCollapsed: boolean;
+  @ViewChild('navbar') navbar: NavbarComponent;
 
   constructor() {
     this.isCollapsed = true;
   }
 
   ngOnInit(): void {
+  }
+
+  hideNavbar() {
+    if (this.navbar.shown) {
+      this.navbar.hide();
+    }
   }
 
 }

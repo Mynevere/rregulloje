@@ -34,8 +34,8 @@
   }
 
   .containerService{
-      width:65%;
-      margin-left:73px;
+      /*width:65%;*/
+      margin-left:47px;
   }
 
   .rowInfo {
@@ -132,6 +132,10 @@
     width: 95%;
     margin-left: 26px;
   }
+
+  .contentInfo {
+    padding-left: 5%;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -156,6 +160,10 @@
     margin-left: 25%;
   }
 
+  .contentInfo{
+      padding-left:5%;
+  }
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -178,7 +186,7 @@
     height: 60%;
     width: 50%;
     margin-left: 40%;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
 
@@ -201,10 +209,15 @@
   .containerService {
     width: 45%;
     margin-left: 26px;
+    padding-top: 4%;
   }
 
   .service {
     width: 60%;
     margin-left: 20%;
+  }
+
+  .contentInfo {
+    padding-left: 10%;
   }
 }
