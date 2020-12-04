@@ -9,5 +9,6 @@ namespace Rregulloje.Infrastructure.Data.Interfaces
     public interface IServicesRepository
     {
         Task<ICollection<T>> GetAllAsync<T>() where T : class;
+        Task<Service> GetServiceById(int serviceId); 
     }
 }

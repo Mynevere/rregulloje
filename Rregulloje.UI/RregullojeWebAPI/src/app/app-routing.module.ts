@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ReportIssueComponent } from './report-issue/report-issue.component';
 import { ServicesComponent } from './services/services.component';
+import { ViewServiceComponent } from './view-service/view-service.component';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: "services", component: ServicesComponent },
   { path: "company", component: CompanyComponent },
   { path: "report-issue", component: ReportIssueComponent },
+  { path: "services/view-service", component: ViewServiceComponent },
 
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: '**', component: HomeComponent }

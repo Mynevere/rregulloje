@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ReportIssueComponent } from './report-issue/report-issue.component';
+import { ViewServiceComponent } from './view-service/view-service.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ReportIssueComponent } from './report-issue/report-issue.component';
     ServicesComponent,
     CompanyComponent,
     ReportIssueComponent,
+    ViewServiceComponent,
   ],
   imports: [
     HttpClientModule,

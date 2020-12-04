@@ -21,6 +21,12 @@ namespace Rregulloje.Application.Services
             _mapper = mapper;
         }
 
+        public async Task<Service> GetServiceById(int serviceId) 
+        {
+            var service = await _servicesRepository.GetServiceById(serviceId);
+            return service;
+        }
+
         public async Task<IEnumerable<ServicesViewModel>> GetServices() 
         {
             var services = await _servicesRepository.GetAllAsync<Service>(); 

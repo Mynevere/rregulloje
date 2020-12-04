@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CompanyService } from '../_Services/company.service';
 import { CompanyViewModel } from '../_ViewModels/CompanyViewModel';
 
@@ -8,7 +9,7 @@ import { CompanyViewModel } from '../_ViewModels/CompanyViewModel';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor(private companyService: CompanyService) { }
+  constructor(private companyService: CompanyService, private route: Router) { }
   id = 1;
   company: CompanyViewModel;
 
@@ -22,5 +23,4 @@ export class HomeComponent implements OnInit {
       this.company = response;
     });
   }
-
 }

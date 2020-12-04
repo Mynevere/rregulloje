@@ -1,7 +1,10 @@
-﻿using Rregulloje.Domain.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using Rregulloje.Domain.Context;
+using Rregulloje.Domain.Models;
 using Rregulloje.Infrastructure.Data.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,6 +22,12 @@ namespace Rregulloje.Infrastructure.Data.Repositories
         public override async Task<ICollection<T>> GetAllAsync<T>() where T : class
         {
             return await base.GetAllAsync<T>();
+        }
+
+        public async Task<Service> GetServiceById(int serviceId)
+        {
+            var service = await _context.Services.Where(x => x.Id == serviceId).FirstOrDefaultAsync();
+            return service;
         }
     }
 }
