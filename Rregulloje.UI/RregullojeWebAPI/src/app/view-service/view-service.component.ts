@@ -22,7 +22,6 @@ export class ViewServiceComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   async ngOnInit() {
-
     await this.getServiceTypes();
    await this.getServiceById();
     this.getMinServicesByServiceId();

@@ -1,0 +1,36 @@
+.container {
+  width:auto;
+}
+
+.description{
+    margin:20px;
+}
+
+.services {
+  height: auto;
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 35px
+}
+
+.serviceTypes {
+  list-style: none;
+  margin-left: 10%;
+}
+
+.allServiceContent{
+    width:100%;
+}
+/*
+h3:hover {
+  background-color: #ffbb33
+}
+*/
+.imgService {
+  max-height: 120px;
+  /* max-width: 100px; */
+  margin: 0;
+  padding: 0;
+  -ms-transform: rotate(20deg);
+  transform: rotate(-39deg);
+}
