@@ -34,3 +34,7 @@ h3:hover {
   -ms-transform: rotate(20deg);
   transform: rotate(-39deg);
 }
+
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(250,210,0.60,47) !important;
+}
