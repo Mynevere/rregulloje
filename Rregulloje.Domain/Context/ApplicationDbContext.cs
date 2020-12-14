@@ -108,6 +108,11 @@ namespace Rregulloje.Domain.Context
             .HasForeignKey(p => p.MinServiceId)
             .HasConstraintName("FK_ServiceType_MinServiceId");
 
+            modelBuilder.Entity<ServiceType>()
+            .HasOne(p => p.MinService)
+            .WithMany(b => b.ServiceTypes)
+            .HasForeignKey(p => p.MinServiceId); 
+
             modelBuilder.Entity<MinServices>(entity =>
             {
                 entity.HasKey(e => e.Id)
@@ -125,6 +130,8 @@ namespace Rregulloje.Domain.Context
             .WithMany()
             .HasForeignKey(p => p.ServiceId)
             .HasConstraintName("FK_Service_ServiceId");
+
+
 
             modelBuilder.Entity<ExtraServices>(entity =>
             {

@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: "services", component: ServicesComponent },
   { path: "company", component: CompanyComponent },
   { path: "report-issue", component: ReportIssueComponent },
-  { path: "services/view-service", component: ViewServiceComponent },
+  { path: "services/view-service/:id", component: ViewServiceComponent },
 
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: '**', component: HomeComponent }

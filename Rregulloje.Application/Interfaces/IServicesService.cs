@@ -10,6 +10,8 @@ namespace Rregulloje.Application.Interfaces
     public interface IServicesService
     {
         Task<IEnumerable<ServicesViewModel>> GetServices();
-        Task<Service> GetServiceById(int serviceId);  
+        Task<Service> GetServiceById(int serviceId);
+        Task<IEnumerable<MinServicesViewModel>> GetMinServicesByServiceId(int serviceId); 
+        Task<IEnumerable<ServiceTypesViewModel>> GetServiceTypes();   
     }
 }

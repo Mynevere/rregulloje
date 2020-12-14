@@ -16,6 +16,10 @@ namespace Rregulloje.Application.AutoMapper
             CreateMap<UserMessageEmailViewModel, UserMessageEmail>();
             CreateMap<IssueViewModel, Issue>();
             CreateMap<Issue, IssueViewModel>();
+            CreateMap<MinServices, MinServicesViewModel>();
+            CreateMap<MinServicesViewModel, MinServices>();
+            CreateMap<ServiceType, ServiceTypesViewModel>();
+            CreateMap<ServiceTypesViewModel, ServiceType>();
         }
     }
 }

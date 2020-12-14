@@ -9,6 +9,8 @@
     <Compile Remove="Migrations\20201022071648_AddSettings.Designer.cs" />
     <Compile Remove="Migrations\20201022072628_UpdateContactUs.cs" />
     <Compile Remove="Migrations\20201022072628_UpdateContactUs.Designer.cs" />
+    <Compile Remove="Migrations\20201209092052_AddServiceTypeAtMinService.cs" />
+    <Compile Remove="Migrations\20201209092052_AddServiceTypeAtMinService.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

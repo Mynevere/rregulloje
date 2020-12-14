@@ -29,5 +29,16 @@ namespace Rregulloje.Infrastructure.Data.Repositories
             var service = await _context.Services.Where(x => x.Id == serviceId).FirstOrDefaultAsync();
             return service;
         }
+
+
+
+        public async Task<IEnumerable<MinServices>> GetMinServicesByServiceId(int serviceId)
+        {
+            var service = await _context.Services.Where(x => x.Id == serviceId).FirstOrDefaultAsync();
+            var minServices = await _context.MinServices.Where(x => x.ServiceId == serviceId).ToListAsync();
+            minServices.ForEach(x => x.Service = service);
+
+            return minServices;
+        }
     }
 }

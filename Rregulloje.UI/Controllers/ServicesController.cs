@@ -29,5 +29,19 @@ namespace Rregulloje.UI.Controllers
             var services = await _servicesService.GetServiceById(serviceId);
             return Ok(services);
         }
+
+        [HttpGet("getMinServices/{serviceId}")]
+        public async Task<IActionResult> GetMinServicesByServiceId(int serviceId)
+        {
+            var minServices = await _servicesService.GetMinServicesByServiceId(serviceId);
+            return Ok(minServices); 
+        }
+
+        [HttpGet("getServiceTypes")]
+        public async Task<IActionResult> GetServiceTypes()
+        {
+            var serviceTypes = await _servicesService.GetServiceTypes(); 
+            return Ok(serviceTypes); 
+        }
     }
 }

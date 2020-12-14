@@ -21,6 +21,12 @@ namespace Rregulloje.Application.Services
             _mapper = mapper;
         }
 
+        public async Task<IEnumerable<MinServicesViewModel>> GetMinServicesByServiceId(int serviceId)
+        {
+            var minServices = await _servicesRepository.GetMinServicesByServiceId(serviceId);
+            return _mapper.Map<IEnumerable<MinServicesViewModel>>(minServices);
+        }
+
         public async Task<Service> GetServiceById(int serviceId) 
         {
             var service = await _servicesRepository.GetServiceById(serviceId);
@@ -31,6 +37,12 @@ namespace Rregulloje.Application.Services
         {
             var services = await _servicesRepository.GetAllAsync<Service>(); 
             return _mapper.Map<IEnumerable<ServicesViewModel>>(services);
+        }
+
+        public async Task<IEnumerable<ServiceTypesViewModel>> GetServiceTypes()
+        {
+            var serviceTypes = await _servicesRepository.GetAllAsync<ServiceType>();
+            return _mapper.Map<IEnumerable<ServiceTypesViewModel>>(serviceTypes);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Rregulloje.Domain.Models
 {
@@ -11,5 +12,7 @@ namespace Rregulloje.Domain.Models
 
         [ForeignKey("ServiceId")]
         public Service Service { get; set; }
+
+        public List<ServiceType> ServiceTypes { get; set; } 
     }
 }
