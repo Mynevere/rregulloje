@@ -1,6 +1,6 @@
 <section class="featured">
   <div class="d-flex justify-content-center pt-4 text-uppercase">
-    <h1>Sherbimet</h1>
+    <h1>Shërbimet</h1>
   </div>
   <hr />
 </section>
@@ -12,7 +12,6 @@
                (mouseover)="toggleFlip(i)" (mouseout)="toggleFlip(i)" [@flipState]="isFlipped(i)">
             <div class="tp-box__side tp-box__front card h-100 shadow-sm">
               <div class="card-body d-flex flex-column">
-                <!-- assets/images/services/uji.png -->
                 <img src="{{service.pictureUrl}}" alt="{{service.pictureUrl}}" class="img-thumbnail imgService">
                 <div class="container-fluid">
                   <p class="text-monospace text-uppercase font-weight-bold">{{service.name}}</p>
@@ -22,11 +21,6 @@
               </div>
             </div>
             <div *ngIf="isFlipped(i)" class="tp-box__side tp-box__back card h-100 shadow-sm">
-              <!--<div class="card-body d-flex flex-column">
-              <img src="{{service.pictureUrl}}" alt="{{service.pictureUrl}}" class="img-thumbnail">
-              <p class="text-monospace text-uppercase font-weight-bold">{{service.description}}</p>
-              <small class="text-muted">{{service.description}}</small>
-              </div>-->
               <div class="card-body d-flex flex-column">
                 <p class="text-monospace text-uppercase font-weight-bold text-center pt-5 pb-5">{{service.name}}</p>
                 <p class="text-center paragraph-back">Ne kryejm shume sherbime rreth {{service.name}}, per te pare se cilat sherbime i kryejm klikoni me poshte!</p>

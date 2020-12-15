@@ -1,3 +1,64 @@
-.shadow-sm {
-  box-shadow: 0 .125rem .25rem rgba(250,210,0.60,47) !important;
+// Small devices (landscape phones, 375px and up)
+@media (min-width: 375px) {
+  .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(250,210,0.60,47) !important;
+  }
+
+  .imgLogo {
+    max-height: 115px;
+    margin-left: 33%;
+    margin-bottom: 10%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(250,210,0.60,47) !important;
+  }
+
+  .imgLogo {
+    max-height: 115px;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(250,210,0.60,47) !important;
+  }
+
+  .imgLogo {
+    max-height: 115px;
+    margin-left: 40%;
+    margin-top: 5%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(250,210,0.60,47) !important;
+  }
+
+  .imgLogo {
+    max-height: 115px;
+    margin-left: 50%;
+    margin-top: 5%;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(250,210,0.60,47) !important;
+  }
+
+  .imgLogo {
+    max-height: 115px;
+    margin-left: 60%;
+  }
+
 }
