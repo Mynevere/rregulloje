@@ -23,8 +23,8 @@ export class ViewServiceComponent implements OnInit {
 
   async ngOnInit() {
     await this.getServiceTypes();
-   await this.getServiceById();
-    this.getMinServicesByServiceId();
+    await this.getServiceById();
+    await this.getMinServicesByServiceId();
   }
 
   async getServiceById() {
@@ -35,7 +35,7 @@ export class ViewServiceComponent implements OnInit {
   }
 
 
-  getMinServicesByServiceId() {
+  async getMinServicesByServiceId() {
     let serviceId: number = parseInt(this.route.snapshot.paramMap.get('id'));
     this.serviceService.getMinServicesByServiceId(serviceId).subscribe(response => {
       this.minService = response;
