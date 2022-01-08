@@ -48,3 +48,7 @@ Thumbs.db
 /Rregulloje.Domain/obj
 /Rregulloje.UI/obj
 /Rregulloje.Infrastructure.IoC/obj
+/Rregulloje.Infrastructure.Data/obj/Debug/netcoreapp3.1
+/Rregulloje.Application/obj/Debug/netcoreapp3.1
+/Rregulloje.Application/obj
+/Rregulloje.Infrastructure.Data/obj
